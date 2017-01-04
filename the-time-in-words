@@ -1,0 +1,46 @@
+process.stdin.resume();
+process.stdin.setEncoding('ascii');
+
+var input_stdin = "";
+var input_stdin_array = "";
+var input_currentline = 0;
+
+process.stdin.on('data', function (data) {
+    input_stdin += data;
+});
+
+process.stdin.on('end', function () {
+    input_stdin_array = input_stdin.split("\n");
+    main();    
+});
+
+function readLine() {
+    return input_stdin_array[input_currentline++];
+}
+
+/////////////// ignore above this line ////////////////////
+
+var numerais = [
+    'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 
+    'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen',
+    'twenty', 'twenty one', 'twenty two', 'twenty three', 'twenty four', 'twenty five', 'twenty six', 'twenty seven',
+    'twenty eight', 'twenty nine', 'thirty'
+];
+
+function main() {
+    var h = parseInt(readLine());
+    var m = parseInt(readLine());
+    
+    if (m == 0) console.log('%s o\' clock', numerais[h])
+    else {
+        if (m > 30) console.log('%s to %s', trataMinutos(60 - m), numerais[h+1]);
+        else console.log('%s past %s', trataMinutos(m), numerais[h]);
+    }
+}
+
+function trataMinutos(min) {
+    if (min == 30) return 'half';
+    else if (min == 15) return 'quarter';
+    else if (min == 1 || min == 29) 'one minute';
+    return numerais[min] + ' minutes';
+}
