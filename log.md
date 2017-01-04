@@ -1,6 +1,6 @@
 # 100 Days Of Code - Log
 
-### Day 0: February 30, 2016 (Example 1)
+<!---### Day 0: February 30, 2016 (Example 1)
 ##### (delete me or comment me out)
 
 **Today's Progress**: Fixed CSS, worked on canvas functionality for the app.
@@ -27,4 +27,14 @@
 
 **Link(s) to work**
 1. [Find the Longest Word in a String](https://www.freecodecamp.com/challenges/find-the-longest-word-in-a-string)
-2. [Title Case a Sentence](https://www.freecodecamp.com/challenges/title-case-a-sentence)
+2. [Title Case a Sentence](https://www.freecodecamp.com/challenges/title-case-a-sentence)--->
+
+### Dia 1: 04 de Janeiro, Quarta-feira
+
+**Progresso do Dia**: Executei alguns desafios do Hacker Rank.
+
+**Pensamentos** Eu consegui desenvolver alguns desafios de forma simples, sem muita dificuldade, mas me mantive focado.
+
+**Link(s) das tarefas**
+1. [The Time In Words](https://www.hackerrank.com/challenges/the-time-in-wordsg)
+2. [Bigger Is Greater](https://www.hackerrank.com/challenges/bigger-is-greater)
